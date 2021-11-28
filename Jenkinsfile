@@ -9,6 +9,17 @@ pipeline {
 			sh 'go build synonyms.go'
 			}
 		}
+		stage('mid') {
+			steps {
+			echo "The mid stage is happening"
+			sleep 20
+			}
+		}
+		stage('compile-fizz') {
+			steps {
+			sh 'go build fizzbuzz.go'
+			}
+		}
     }
     post {
 		always {
