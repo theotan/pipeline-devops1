@@ -17,7 +17,7 @@ pipeline {
     }
     post {
 	always {
-	    archiveArtifacts artifacts: 'synonyms', fingerprint: true
+	    archiveArtifacts artifacts: 'fizzbuzz', fingerprint: true
 	}
     }
 }
