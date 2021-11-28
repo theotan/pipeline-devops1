@@ -6,12 +6,12 @@ pipeline {
     stages {
 	stage('compilation') {
 	    steps {
-		sh 'go build synonyms.go'
+		sh 'go build fizzbuzz.go'
 	    }
 	}
 	stage('trial-run') {
 	    steps {
-		sh './synonyms'
+		sh './fizzbuzz'
 	    }
 	}
     }
